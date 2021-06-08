@@ -1,0 +1,37 @@
+version: '3.7'
+services:
+    php_app:
+        build:
+          context: .
+          dockerfile: Dockerfile
+        ports:
+          - '443:443'
+        volumes:
+            - ./app:/app/web
+        depends_on:
+            - pgsql_db
+        networks:
+            - app_network
+    pgsql_db:
+        image: 'postgres:alpine'
+        environment:
+            POSTGRES_PASSWORD: main
+            POSTGRES_USER: main
+            POSTGRES_DB: main
+        ports:
+            - '5432:5432'
+
+        volumes:
+            - dbdata:/var/lib/mysql/
+        
+        networks:
+            - app_network
+# Docker Networks
+networks:
+    app_network:
+        driver: bridge
+
+# Volumes
+volumes:
+    dbdata:
+        driver: local
