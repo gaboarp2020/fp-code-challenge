@@ -45,7 +45,7 @@ bash init.sh
 *note: This should only be run once.
 
 ### php bin/console
-Once the containers are running you can run php console/bin with:
+Once the containers are running you can run php bin/console with:
 ```
 docker-compose exec php_app php bin/console
 ```
