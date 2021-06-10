@@ -23,7 +23,7 @@ For the database, the Docker image postgreSQL v13 (in alpine) was implemented. P
 
 As it's a simple single entity application, where an ACID transactions is not required ... there is nothing special in this choice.
 
-### Archutecture
+### Architecture
 In this project, an architecture based on this [architecture file descrition](https://github.com/firmaprofesional/code-challenge/blob/main/core-team/DefaultArchitecture.pdf) was implemented.
 
 ### What can be improved
