@@ -1,7 +1,7 @@
 controllers:
-    resource: ../../src/Controller/
+    resource: ../../../src/FP/CodeChallenge/Infrastructure/UI/Web/Symfony/Controller
     type: annotation
 
 kernel:
-    resource: ../../src/Kernel.php
+    resource: ../../../src/FP/CodeChallenge/Infrastructure/UI/Web/Symfony/Kernel.php
     type: annotation
