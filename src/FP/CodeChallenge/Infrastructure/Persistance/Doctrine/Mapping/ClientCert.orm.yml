@@ -1,0 +1,28 @@
+App\Domain\Model\ClientCert:
+  type: entity
+  repositoryClass: App\Domain\Model\ClientCert
+  table: client_certs
+  indexes:
+    name_index:
+      columns: [ id ]
+  id:
+    id:
+      type: integer
+      nullable: false
+      unique: true
+      generator:
+        strategy: AUTO
+  fields:
+    commonName:
+      type: string
+      length: 225
+      column: common_name
+    serialNumber:
+      type: string
+      length: 225
+      column: serial_number
+      unique: true
+    createdAt:
+      type: datetime
+      column: created_at
+      nullable: false

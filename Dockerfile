@@ -6,9 +6,9 @@ RUN apt-get update && apt-get install -y php-pgsql
 
 WORKDIR /app/web
 
-COPY ./app /app/web/
+COPY . .
 
-RUN composer install
+WORKDIR /app/web/app
 
 RUN ln -sf /dev/stdout /app/apache.access.log
 

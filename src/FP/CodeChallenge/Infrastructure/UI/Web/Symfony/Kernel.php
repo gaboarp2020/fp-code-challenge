@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Infrastructure\UI\Web\Symfony;
 
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Component\Config\Loader\LoaderInterface;
@@ -27,7 +27,7 @@ class Kernel extends BaseKernel
 
     public function getProjectDir(): string
     {
-        return \dirname(__DIR__);
+        return \realpath(__DIR__).'/../../../../../../../app';
     }
 
     protected function configureContainer(ContainerBuilder $container, LoaderInterface $loader): void
