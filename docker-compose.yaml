@@ -7,7 +7,7 @@ services:
         ports:
           - '443:443'
         volumes:
-            - ./app:/app/web
+            - .:/app/web
         depends_on:
             - pgsql_db
         networks:
