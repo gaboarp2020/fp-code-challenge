@@ -14,6 +14,7 @@ docker-compose stop
 docker-compose up --build
 
 # Setup App
+docker-compose exec composer install --working-dir=/app
 docker-compose exec php_app php app/bin/console secrets:generate-keys
 docker-compose exec php_app php app/bin/console doctrine:schema:create
 docker-compose exec php_app php app/bin/console doctrine:migrations:migrate
