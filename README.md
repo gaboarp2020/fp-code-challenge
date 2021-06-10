@@ -32,8 +32,7 @@ The controllers have some complicated logic. It would probably have been better 
 On the other hand, it would have been much better if automated tests had been created with tools such as PHPUnit or Behat. I had difficulty configuring unit tests implementing the required folder structure for the project and using Symfony. I think it took me a little more time to learn how to do it effectively 
 
 ## Project setup
-Una vez clonado el repositorio, ejecuta los siguientes comandos en el directorio del repo:
-
+Once the repository is cloned, run the following commands in the repo directory:
 ```
 bash setup.sh
 ```
