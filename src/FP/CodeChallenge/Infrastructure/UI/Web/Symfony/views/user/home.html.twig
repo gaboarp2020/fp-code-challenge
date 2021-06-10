@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {# Run `composer require symfony/webpack-encore-bundle`
+           and uncomment the following Encore helpers to start using Symfony UX #}
+        {% block stylesheets %}
+            {#{{ encore_entry_link_tags('app') }}#}
+        {% endblock %}
+
+        {% block javascripts %}
+            {#{{ encore_entry_script_tags('app') }}#}
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+            {% if id is defined and id is not null  %}
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>CD</th>
+                            <td>{{ common_name }}</td>
+                        </tr>
+                        <tr>
+                            <th>SN</th>
+                            <td>{{ serial_number }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <a href="/"><button>Salir</button></a>
+            {% endif %}
+        {% endblock %}
+    </body>
+</html>
