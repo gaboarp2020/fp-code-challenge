@@ -15,7 +15,7 @@ The application must have:
 It also had to be created using PHP 7.2 and Symfony as Framework.
 
 ## Technical Choices
-### PHP y Symfony
+### PHP and Symfony
 As mentioned, to develop the application I had to implement Symfony 4 as Framework and PHP 7.2 
 
 ### Database
