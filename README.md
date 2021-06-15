@@ -24,7 +24,7 @@ For the database, the Docker image postgreSQL v13 (in alpine) was implemented. P
 As it's a simple single entity application, where an ACID transactions is not required ... there is nothing special in this choice.
 
 ### Architecture
-In this project, an architecture based on this [architecture file descrition](https://github.com/firmaprofesional/code-challenge/blob/main/core-team/DefaultArchitecture.pdf) was implemented.
+In this project, an architecture based on this [architecture file description](https://github.com/firmaprofesional/code-challenge/blob/main/core-team/DefaultArchitecture.pdf) was implemented.
 
 ### What can be improved
 The controllers have some complicated logic. It would probably have been better to delegate that logic to other services.
